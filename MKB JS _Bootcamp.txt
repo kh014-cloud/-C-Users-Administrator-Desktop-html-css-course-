@@ -1,0 +1,179 @@
+
+
+let name = "Your Name";
+let age = 25;
+let isStudent = true;
+
+console.log(name, age, isStudent);
+
+let favoriteColour = "Blue";
+console.log(favoriteColour);
+favoriteColour = "Green";
+console.log(favoriteColour);
+
+let num1 = 10;
+let num2 = 5;
+``
+let intsum = num1 + num2;
+let difference = num1 - num2;
+let product = num1 * num2;
+let quotient = num1 / num2;
+
+console.log(sum, difference, product, quotient);
+
+let intNum = 20;
+let floatNum = 5.5;
+
+console.log(intNum + floatNum);
+console.log(intNum - floatNum);
+console.log(intNum * floatNum);
+console.log(intNum / floatNum);
+console.log(intNum % 3);
+console.log(intNum ** 2);
+
+let x = 8;
+let y = 12;
+
+console.log(x > y);
+console.log(x <= y);
+console.log(x === y);
+console.log(x !== y);
+
+let a = true;
+let b = false;
+
+console.log(a && b);
+console.log(a || b);
+console.log(!a);
+
+let p = 10;
+p += 5; console.log(p);
+p -= 3; console.log(p);
+p *= 2; console.log(p);
+p /= 4; console.log(p);
+p %= 3; console.log(p);
+
+
+let temperature = 22;
+if (temperature < 0) {
+  console.log("It's freezing!");
+} else if (temperature <= 15) {
+  console.log("It's cold.");
+} else if (temperature <= 25) {
+  console.log("It's mild.");
+} else {
+  console.log("It's warm.");
+}
+
+
+switch (true) {
+  case temperature < 0:
+    console.log("It's freezing!");
+    break;
+  case temperature <= 15:
+    console.log("It's cold.");
+    break;
+  case temperature <= 25:
+    console.log("It's mild.");
+    break;
+  default:
+    console.log("It's warm.");
+}
+
+
+let number = 6;
+if (number % 2 === 0 && number % 3 === 0) {
+  console.log("Divisible by both.");
+} else if (number % 2 === 0) {
+  console.log("Divisible by 2.");
+} else if (number % 3 === 0) {
+  console.log("Divisible by 3.");
+} else {
+  console.log("Not divisible by 2 or 3.");
+}
+
+
+switch (true) {
+  case number % 2 === 0 && number % 3 === 0:
+    console.log("Divisible by both.");
+    break;
+  case number % 2 === 0:
+    console.log("Divisible by 2.");
+    break;
+  case number % 3 === 0:
+    console.log("Divisible by 3.");
+    break;
+  default:
+    console.log("Not divisible by 2 or 3.");
+}
+
+
+for (let i = 1; i <= 10; i++) console.log(i);
+for (let i = 2; i <= 20; i += 2) console.log(i);
+
+let sum = 0;
+for (let i = 1; i <= 100; i++) sum += i;
+console.log("Sum:", sum);
+
+const numbers1 = [1, 2, 3, 4, 5];
+numbers1.forEach(n => console.log(n));
+
+const numbers2 = [3, 7, 2, 5, 10, 6];
+let max = numbers2[0];
+for (let i = 1; i < numbers2.length; i++) {
+  if (numbers2[i] > max) max = numbers2[i];
+}
+console.log("Max:", max);
+
+
+let i = 1;
+while (i <= 10) console.log(i++);
+
+i = 2;
+while (i <= 20) {
+  console.log(i);
+  i += 2;
+}
+
+sum = 0;
+i = 1;
+while (i <= 100) {
+  sum += i;
+  i++;
+}
+console.log("Sum:", sum);
+
+i = 5;
+while (i < 50) {
+  console.log(i);
+  i += 5;
+}
+
+
+i = 1;
+do {
+  console.log(i);
+  i++;
+} while (i <= 10);
+
+sum = 0;
+i = 1;
+do {
+  sum += i;
+  i++;
+} while (i <= 100);
+console.log("Sum:", sum);
+
+
+let userInput;
+do {
+  userInput = prompt("Enter a number greater than 10:");
+} while (parseInt(userInput) <= 10);
+
+
+const correctNum = Math.floor(Math.random() * 10) + 1;
+let guess;
+do {
+  guess = parseInt(prompt("Guess a number between 1 and 10:"));
+} while (guess !== correctNum);
+console.log("Correct! You guessed it.");
